@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2018-08-23T23:14:51+01:00
-draft: true
+draft: false
 ---
 
 ¡Hey! me llamo Daniel Marin Cabillas, ¡bienvenidos!

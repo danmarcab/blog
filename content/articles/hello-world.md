@@ -14,3 +14,4 @@ Given I am a Software Engineer I will mostly write about programming in general,
 web development and computer science.
 
 I hope someone can learn something reading this (even if is how not to write a blog 😀).
+  

@@ -1,0 +1,119 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "danmarcab.com"
+theme = "bilberry"
+
+enableRobotsTXT = true
+
+# Change to one of your content languages definded at the end.
+DefaultContentLanguage = "en"
+
+# Enable / Disable Google Analytics statistics for your site
+googleAnalytics = ""
+
+# Enable / Disable comments on the articles via Disqus.
+# disqusShortname = "danmarcab"
+
+[params]
+  # Favicon for the browser's favorites and tabs
+  favicon = "" # set a favicon icon
+
+  # Custom CSS / JS modules that will be imported by the template.
+  # Files are relative to the static/ directory or a URL.
+  # Files are imported in the order they appear here, after
+  # theme.css and theme.js, respectively.
+  css_modules = []
+  js_modules = []
+
+  # Description and meta data for the search engines
+  author = "danmarcab"
+  description = "Daniel Marín Cabillas personal blog."
+  keywords = "blog,personal"
+
+  # How many articles should be displayed at once?
+  paginate = 7
+
+  # Enable / Disable MathJax
+  enable_mathjax    = false
+
+  # Enable / Disable algolia search
+  algolia_search    = false
+  # algolia_appId     = ""
+  # algolia_apiKey    = ""
+  # algolia_indexName = ""
+  # Set this option to false if you want to search within all articles in all languages at once
+  # algolia_currentLanguageOnly = true
+
+  # Header configuration
+  # your subtitle if you want to use any
+  subtitle = ""
+
+  # if you want to use gravatar for the header image
+  gravatarEMail = "danmarcab@gmail.com"
+
+  # set an path to the image file you want to use | overwrites gravatar
+  # customImage = ""
+
+  # always display the top navigation (with pages and search) on non-mobile screens
+  permanentTopNav = false
+
+  # show a language chooser in the header
+  showHeaderLanguageChooser = true
+
+
+  # Footer configuration
+  showFooter = true
+
+  # How many articles should be displayed at latest posts in the footer?
+  # Set to -1 to hide the 'Latest Posts' column
+  amountLatestPostsInFooter = 7
+
+  # How many categories should be displayed in the footer section?
+  # Set to -1 to hide the 'Categories' column
+  amountCategoriesInFooter = 7
+
+  # show a language chooser in the header
+  showFooterLanguageChooser = true
+
+  # social media profile urls for the footer links
+  showSocialMedia = true
+
+  facebook   = ""
+  twitter    = "https://twitter.com/danmarcab"
+  googleplus = ""
+  pinterest  = ""
+  instagram  = ""
+  tumblr     = ""
+  youtube    = ""
+  vimeo      = ""
+  github     = "https://github.com/danmarcab"
+  xing       = ""
+  linkedin   = ""
+
+  # credits line configuration
+  copyrightBy = "by danmarcab"
+  copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
+  # copyrightYearOverride = "2017"
+  copyrightUrl = "https://github.com/danmarcab"
+  creditsText = " "
+  creditsUrl = " "
+
+
+# customize your available languages for your multi-langual site
+# or delete the [Languages] blog to use the theme with only one supported language
+[Languages]
+  [Languages.en]
+    weight = 1
+[Languages.es]
+    weight = 2
+
+# don't change anything below
+[taxonomies]
+  author   = "author"
+  tag      = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON", "RSS" ]
+  page = [ "HTML" ]
+

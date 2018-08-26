@@ -1,1 +1,4 @@
 public/
+static/
+elm-stuff/
+node_modules/

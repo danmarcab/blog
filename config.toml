@@ -9,7 +9,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = ""
+googleAnalytics = "UA-124668138-1"
 
 # Enable / Disable comments on the articles via Disqus.
 disqusShortname = "danmarcab-gmail-com"
@@ -106,6 +106,23 @@ disqusShortname = "danmarcab-gmail-com"
     weight = 1
 [Languages.es]
     weight = 2
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
 
 # don't change anything below
 [taxonomies]

@@ -1,136 +1,69 @@
-baseURL = "https://danmarcab.com/"
-languageCode = "en-us"
-title = "danmarcab.com"
-theme = "bilberry"
-
-enableRobotsTXT = true
-
-# Change to one of your content languages definded at the end.
+baseurl = "https://danmarcab.com/"
 DefaultContentLanguage = "en"
 
-# Enable / Disable Google Analytics statistics for your site
+title = "danmarcab.com"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+disqusShortname = "danmarcab-gmail-com"
 googleAnalytics = "UA-124668138-1"
 
-# Enable / Disable comments on the articles via Disqus.
-disqusShortname = "danmarcab-gmail-com"
-
-[params]
-  # Favicon for the browser's favorites and tabs
-  favicon = "" # set a favicon icon
-
-  # Custom CSS / JS modules that will be imported by the template.
-  # Files are relative to the static/ directory or a URL.
-  # Files are imported in the order they appear here, after
-  # theme.css and theme.js, respectively.
-  css_modules = []
-  js_modules = []
-
-  # Description and meta data for the search engines
-  author = "danmarcab"
-  description = "Daniel Marín Cabillas personal blog."
-  keywords = "blog,personal"
-
-  # How many articles should be displayed at once?
-  paginate = 7
-
-  # Enable / Disable MathJax
-  enable_mathjax    = false
-
-  # Enable / Disable algolia search
-  algolia_search    = false
-  # algolia_appId     = ""
-  # algolia_apiKey    = ""
-  # algolia_indexName = ""
-  # Set this option to false if you want to search within all articles in all languages at once
-  # algolia_currentLanguageOnly = true
-
-  # Header configuration
-  # your subtitle if you want to use any
-  subtitle = ""
-
-  # if you want to use gravatar for the header image
-  gravatarEMail = "danmarcab@gmail.com"
-
-  # set an path to the image file you want to use | overwrites gravatar
-  # customImage = ""
-
-  # always display the top navigation (with pages and search) on non-mobile screens
-  permanentTopNav = false
-
-  # show a language chooser in the header
-  showHeaderLanguageChooser = true
-
-
-  # Footer configuration
-  showFooter = true
-
-  # How many articles should be displayed at latest posts in the footer?
-  # Set to -1 to hide the 'Latest Posts' column
-  amountLatestPostsInFooter = 7
-
-  # How many categories should be displayed in the footer section?
-  # Set to -1 to hide the 'Categories' column
-  amountCategoriesInFooter = 7
-
-  # show a language chooser in the header
-  showFooterLanguageChooser = true
-
-  # social media profile urls for the footer links
-  showSocialMedia = true
-
-  facebook   = ""
-  twitter    = "https://twitter.com/danmarcab"
-  googleplus = ""
-  pinterest  = ""
-  instagram  = ""
-  tumblr     = ""
-  youtube    = ""
-  vimeo      = ""
-  github     = "https://github.com/danmarcab"
-  xing       = ""
-  linkedin   = ""
-
-  # credits line configuration
-  copyrightBy = "by danmarcab"
-  copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
-  # copyrightYearOverride = "2017"
-  copyrightUrl = "https://github.com/danmarcab"
-  creditsText = " "
-  creditsUrl = " "
-
-
-# customize your available languages for your multi-langual site
-# or delete the [Languages] blog to use the theme with only one supported language
 [Languages]
   [Languages.en]
     weight = 1
 [Languages.es]
     weight = 2
 
-[privacy]
-  [privacy.disqus]
-    disable = false
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = true
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+#  subtitle = "Build a beautiful and simple website in minutes"
+  logo = "img/profile.jpg"
+#  favicon = "img/favicon.ico"
+  dateFormat = "2 August 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  useHLJS = false
+  socialShare = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-# don't change anything below
-[taxonomies]
-  author   = "author"
-  tag      = "tags"
-  category = "categories"
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
 
-[outputs]
-  home = [ "HTML", "JSON", "RSS" ]
-  page = [ "HTML" ]
+[Author]
+  name = "Daniel Marin Cabillas"
+  website = "danmarcab.com"
+  email = "danmarcab@gmail.com"
+  github = "danmarcab"
+  twitter = "danmarcab"
 
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+#[[menu.main]]
+#    name = "About"
+#    url = "page/about/"
+#    weight = 3
+
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3

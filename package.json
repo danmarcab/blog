@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "elm": "^0.19.0-bugfix2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd elm/simple-calculator; make prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danmarcab/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danmarcab/blog/issues"
+  },
+  "homepage": "https://github.com/danmarcab/blog#readme"
+}
